@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 
 import Common.CommonBase;
 import constants.CT_PageURLs;
+import factory.LoginPageFactory;
 import page.LoginPage;
 
 public class LoginTest extends CommonBase {
@@ -26,7 +27,7 @@ public class LoginTest extends CommonBase {
 	@Test
 	public void loginSucessfully() 
 		{
-		 LoginPage login = new LoginPage(driver);
+		 LoginPageFactory login = new LoginPageFactory (driver);
 		 login.LoginFunction("admin@demo.com", "riseDemo");
 		 assertTrue(driver.findElement(By.xpath("//span[text()='Dashboard']")).isDisplayed());
 		 
