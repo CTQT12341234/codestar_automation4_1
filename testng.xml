@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="testsuite">
+
+	<test name="Run parameter test">
+	<parameter name="browserParamName" value ="firefox"> </parameter>
+		<classes>
+			<class name="testsuite.AddClientTest" /> 
+			<class name="testsuite.LoginTest" /> 
+			<class name="testsuite.Btvn18_bepantoan" /> 
+			<class name="testsuite.Btvn18_Dienmay" /> 
+		</classes>	
+	</test> 
+	
+	<test name="Run parameter chrome test">
+	<parameter name="browserParamName" value ="chrome"> </parameter>
+		<classes>
+			<class name="testsuite.AddClientTest" /> 
+			<class name="testsuite.LoginTest" /> 
+			<class name="testsuite.Btvn18_bepantoan" /> 
+			<class name="testsuite.Btvn18_Dienmay" /> 
+			
+		</classes>	
+	</test> 
+</suite> <!-- Suite -->
